@@ -1,0 +1,55 @@
+{
+  "name": "nl-compensation",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Compare Dutch employment packages with shared CLI and web calculations for 2026.",
+  "homepage": "https://github.com/Muatasim-Aswad/nl-compensation#readme",
+  "bugs": {
+    "url": "https://github.com/Muatasim-Aswad/nl-compensation/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muatasim-Aswad/nl-compensation.git"
+  },
+  "bin": {
+    "nl-compensation": "apps/cli/dist/index.js"
+  },
+  "files": [
+    "apps/cli/dist",
+    "apps/web/dist",
+    "README.md"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "vp run build && node apps/cli/dist/index.js serve",
+    "start": "node apps/cli/dist/index.js serve",
+    "cli": "node apps/cli/dist/index.js",
+    "format:all": "vp fmt",
+    "format:check": "vp run fmt:check",
+    "lint:all": "vp run lint",
+    "typecheck:all": "vp run typecheck",
+    "test:all": "vp run test",
+    "verify:all": "vp run verify",
+    "build:all": "vp run build",
+    "build:cli": "vp run -F @nl-compensation/cli --cache build",
+    "build:web": "vp run -F @nl-compensation/web --cache build",
+    "validate:sources": "node scripts/validate-sources.mjs",
+    "smoke": "bash scripts/smoke.sh",
+    "check": "bash scripts/check.sh",
+    "prepare": "node scripts/setup.mjs",
+    "contracts:generate": "node scripts/generate-contracts.mjs",
+    "architecture:check": "node scripts/check-architecture.mjs",
+    "hooks:install": "git config --local core.hooksPath .githooks"
+  },
+  "devDependencies": {
+    "prettier": "3.9.6",
+    "ts-json-schema-generator": "^2.9.0",
+    "typescript": "catalog:",
+    "vite": "catalog:",
+    "vite-plus": "catalog:"
+  },
+  "engines": {
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
+  },
+  "packageManager": "pnpm@11.15.0"
+}

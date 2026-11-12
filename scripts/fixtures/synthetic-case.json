@@ -1,0 +1,139 @@
+{
+  "schemaVersion": "1",
+  "caseId": "synthetic-smoke-case",
+  "employerPackage": {
+    "salaryExpressions": [
+      {
+        "amount": {
+          "value": { "kind": "exact", "value": { "amountCents": 460000, "currency": "EUR" } },
+          "origin": "offer",
+          "evidenceStatus": "explicit",
+          "validationState": "valid",
+          "source": { "id": "synthetic-smoke" },
+          "observedAt": "2026-08-16",
+          "locked": true
+        },
+        "period": "monthly"
+      }
+    ],
+    "actualWeeklyHours": {
+      "value": { "kind": "exact", "value": { "kind": "standard", "hours": 40 } },
+      "origin": "offer",
+      "evidenceStatus": "explicit",
+      "validationState": "valid",
+      "source": { "id": "synthetic-smoke" },
+      "observedAt": "2026-08-16",
+      "locked": true
+    },
+    "employerFullTimeWeeklyHours": {
+      "value": { "kind": "exact", "value": { "kind": "standard", "hours": 40 } },
+      "origin": "offer",
+      "evidenceStatus": "explicit",
+      "validationState": "valid",
+      "source": { "id": "synthetic-smoke" },
+      "observedAt": "2026-08-16",
+      "locked": true
+    },
+    "holidayPay": {
+      "inclusion": {
+        "value": { "kind": "exact", "value": "excluded" },
+        "origin": "offer",
+        "evidenceStatus": "explicit",
+        "validationState": "valid",
+        "source": { "id": "synthetic-smoke" },
+        "observedAt": "2026-08-16",
+        "locked": true
+      },
+      "rate": {
+        "value": { "kind": "exact", "value": { "partsPerMillion": 80000 } },
+        "origin": "offer",
+        "evidenceStatus": "explicit",
+        "validationState": "valid",
+        "source": { "id": "synthetic-smoke" },
+        "observedAt": "2026-08-16",
+        "locked": true
+      },
+      "basis": {
+        "value": { "kind": "exact", "value": { "kind": "base_salary" } },
+        "origin": "offer",
+        "evidenceStatus": "explicit",
+        "validationState": "valid",
+        "source": { "id": "synthetic-smoke" },
+        "observedAt": "2026-08-16",
+        "locked": true
+      }
+    },
+    "ikbComponents": [],
+    "cashComponents": [],
+    "reimbursements": [],
+    "taxableBenefits": [],
+    "nonCashBenefits": []
+  },
+  "fiscal": {
+    "underAowAge": {
+      "value": { "kind": "exact", "value": true },
+      "origin": "offer",
+      "evidenceStatus": "explicit",
+      "validationState": "valid",
+      "source": { "id": "synthetic-smoke" },
+      "observedAt": "2026-08-16",
+      "locked": true
+    },
+    "domesticTaxpayer": {
+      "value": { "kind": "exact", "value": true },
+      "origin": "offer",
+      "evidenceStatus": "explicit",
+      "validationState": "valid",
+      "source": { "id": "synthetic-smoke" },
+      "observedAt": "2026-08-16",
+      "locked": true
+    }
+  },
+  "household": {
+    "hasBenefitPartner": {
+      "value": { "kind": "exact", "value": false },
+      "origin": "offer",
+      "evidenceStatus": "explicit",
+      "validationState": "valid",
+      "source": { "id": "synthetic-smoke" },
+      "observedAt": "2026-08-16",
+      "locked": true
+    },
+    "applicantInsuredForDutchHealthcare": {
+      "value": { "kind": "exact", "value": true },
+      "origin": "offer",
+      "evidenceStatus": "explicit",
+      "validationState": "valid",
+      "source": { "id": "synthetic-smoke" },
+      "observedAt": "2026-08-16",
+      "locked": true
+    },
+    "householdMembers": {
+      "value": { "kind": "exact", "value": { "numerator": 1, "denominator": 1 } },
+      "origin": "offer",
+      "evidenceStatus": "explicit",
+      "validationState": "valid",
+      "source": { "id": "synthetic-smoke" },
+      "observedAt": "2026-08-16",
+      "locked": true
+    },
+    "children": {
+      "value": { "kind": "exact", "value": { "numerator": 0, "denominator": 1 } },
+      "origin": "offer",
+      "evidenceStatus": "explicit",
+      "validationState": "valid",
+      "source": { "id": "synthetic-smoke" },
+      "observedAt": "2026-08-16",
+      "locked": true
+    },
+    "applicantAge": {
+      "value": { "kind": "exact", "value": { "numerator": 32, "denominator": 1 } },
+      "origin": "offer",
+      "evidenceStatus": "explicit",
+      "validationState": "valid",
+      "source": { "id": "synthetic-smoke" },
+      "observedAt": "2026-08-16",
+      "locked": true
+    }
+  }
+}

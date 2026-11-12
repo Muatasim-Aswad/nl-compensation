@@ -1,0 +1,16 @@
+[tools]
+node = "26.13.0"
+pnpm = "11.15.0"
+"aqua:gitleaks/gitleaks" = "8.30.1"
+
+[tasks.dev]
+run = "pnpm run dev"
+
+[tasks.check]
+run = "pnpm run check"
+
+[tasks.verify]
+run = "pnpm run verify:all"
+
+[tasks.build]
+run = "pnpm run build:all"

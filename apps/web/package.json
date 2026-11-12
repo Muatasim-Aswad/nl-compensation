@@ -1,0 +1,30 @@
+{
+  "name": "@nl-compensation/web",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "vp lint",
+    "typecheck": "tsc --noEmit",
+    "test": "vp test",
+    "build": "vp build"
+  },
+  "dependencies": {
+    "@nl-compensation/core": "workspace:*",
+    "@nl-compensation/rules-nl": "workspace:*",
+    "react": "catalog:",
+    "react-dom": "catalog:"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.3.5",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "@vitejs/plugin-react": "catalog:",
+    "jsdom": "^31.0.0",
+    "tailwindcss": "4.3.5",
+    "typescript": "catalog:",
+    "vite": "catalog:",
+    "vite-plus": "catalog:"
+  },
+  "packageManager": "pnpm@11.15.0"
+}

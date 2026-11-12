@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "comment": "Build output ships rules and formulas only. Tests stay in the typecheck project so they are still checked, but compiling them into dist would ship them and make the test runner execute every case twice.",
+  "exclude": ["src/**/*.test.ts"]
+}
