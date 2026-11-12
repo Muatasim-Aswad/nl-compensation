@@ -42,7 +42,7 @@
     "hooks:install": "git config --local core.hooksPath .githooks"
   },
   "devDependencies": {
-    "prettier": "3.9.6",
+    "prettier": "3.9.10",
     "ts-json-schema-generator": "^2.9.0",
     "typescript": "catalog:",
     "vite": "catalog:",
