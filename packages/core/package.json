@@ -1,0 +1,22 @@
+{
+  "name": "@nl-compensation/core",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./testing": "./src/test/fixtures.ts"
+  },
+  "scripts": {
+    "lint": "vp lint",
+    "typecheck": "tsc --noEmit",
+    "test": "vp test --config ../../vite.config.ts",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "catalog:",
+    "vite": "catalog:",
+    "vite-plus": "catalog:"
+  },
+  "packageManager": "pnpm@11.15.0"
+}

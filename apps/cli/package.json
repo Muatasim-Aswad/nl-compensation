@@ -1,0 +1,27 @@
+{
+  "name": "@nl-compensation/cli",
+  "version": "0.0.0",
+  "private": true,
+  "bin": {
+    "nl-compensation": "./dist/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "lint": "vp lint",
+    "typecheck": "tsc --noEmit",
+    "test": "vp test",
+    "build": "vp build"
+  },
+  "dependencies": {
+    "@nl-compensation/core": "workspace:*",
+    "@nl-compensation/rules-nl": "workspace:*",
+    "ajv": "^8.20.0"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "typescript": "catalog:",
+    "vite": "catalog:",
+    "vite-plus": "catalog:"
+  },
+  "packageManager": "pnpm@11.15.0"
+}

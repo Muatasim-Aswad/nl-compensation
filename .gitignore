@@ -1,0 +1,34 @@
+node_modules/
+dist/
+coverage/
+.vite/
+.vite-plus/
+.vp/
+*.tsbuildinfo
+*.tgz
+.env
+.env.*
+!.env.example
+*.local.md
+
+# Private local-first state (XDG defaults and project-local overrides).
+.xdg/
+.config/
+.data/
+.state/
+nl-compensation/
+
+# Regenerated from the public contracts during install and checks.
+packages/core/src/generated/
+
+# Private SQLite databases and sidecars.
+*.sqlite3
+*.sqlite3-*
+
+# Local agent workflow records.
+docs/plans/
+docs/audits/
+docs/**/ledger/
+docs/**/sessions*.jsonl
+docs/research/*-contract.md
+.vitest/

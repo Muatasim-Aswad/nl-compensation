@@ -1,0 +1,24 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+
+catalog:
+  vite: npm:@voidzero-dev/vite-plus-core@1.6.0
+  vite-plus: 1.6.0
+  typescript: ~6.0.2
+  react: ^19.2.8
+  react-dom: ^19.2.8
+  "@types/node": ^26.1.2
+  "@types/react": ^19.2.17
+  "@types/react-dom": ^19.2.3
+  "@vitejs/plugin-react": ^6.0.4
+
+overrides:
+  vite@*: "catalog:"
+  ts-json-schema-generator>glob: 14.0.2
+
+peerDependencyRules:
+  allowAny:
+    - vite
+  allowedVersions:
+    vite: "*"
